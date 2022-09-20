@@ -2,7 +2,7 @@
 
 return [
     'project_id' => env('GOOGLE_CLOUD_PROJECT_ID', 'your-project-id'),
-    'key_file_path' => env('GOOGLE_CLOUD_KEY_FILE', null), // optional: /path/to/service-account.json
+    'key_file_path' => env('GOOGLE_CLOUD_QUEUES_KEY_FILE', null), // optional: /path/to/service-account.json
     'location' => env('GOOGLE_CLOUD_QUEUES_LOCATION', 'europe-west6'),
     'queue_prefix' => env('GOOGLE_CLOUD_QUEUES_PREFIX', 'google-cloud-queue--'),
 

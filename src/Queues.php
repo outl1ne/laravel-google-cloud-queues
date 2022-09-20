@@ -16,7 +16,9 @@ class Queues
 
     public function __construct()
     {
-        $this->client = new Client(config('google-cloud-queues'), new CloudTasksClient());
+        $this->client = new Client(config('google-cloud-queues'), new CloudTasksClient([
+            'keyFilePath' => config('google-cloud-queues.key_file_path'),
+        ]));
         $this->queues = $this->parseQueues(config('google-cloud-queues'), config('google-cloud-queues.queues'));
     }
 
