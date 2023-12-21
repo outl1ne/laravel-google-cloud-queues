@@ -55,7 +55,7 @@ class Client
         $rateLimits = new RateLimits;
         $rateLimits->setMaxBurstSize($options['rate_limits']['max_burst_size']);
         $rateLimits->setMaxConcurrentDispatches($options['rate_limits']['max_concurrent_dispatches']);
-        $rateLimits->setMaxDispatchesPerSecond($options['rate_limits']['max_displatches_per_second']);
+        $rateLimits->setMaxDispatchesPerSecond($options['rate_limits']['max_dispatches_per_second'] ?? $options['rate_limits']['max_displatches_per_second']);
         $queue->setRateLimits($rateLimits);
 
         $retryConfig = new RetryConfig;

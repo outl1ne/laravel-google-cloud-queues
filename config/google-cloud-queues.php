@@ -9,7 +9,7 @@ return [
     'rate_limits' => [
         'max_burst_size' => 10,
         'max_concurrent_dispatches' => 10,
-        'max_displatches_per_second' => 10,
+        'max_dispatches_per_second' => 10,
     ],
     'retry_config' => [
         'max_attempts' => 5,
@@ -25,7 +25,7 @@ return [
             // 'rate_limits' => [
             //     'max_burst_size' => 10,
             //     'max_concurrent_dispatches' => 75,
-            //     'max_displatches_per_second' => 20,
+            //     'max_dispatches_per_second' => 20,
             // ],
             // 'retry_config' => [
             //     'max_attempts' => 5,
